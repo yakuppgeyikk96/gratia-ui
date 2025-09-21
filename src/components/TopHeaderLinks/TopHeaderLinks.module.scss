@@ -1,0 +1,27 @@
+@use "@/styles/_variables.scss" as *;
+@use "@/styles/_colors.scss" as *;
+@use "@/styles/_flex.scss" as *;
+
+
+.topHeaderLinks {
+  list-style: none;
+}
+
+.topHeaderLinkItem {
+  @include flex-center();
+  height: 12px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    .topHeaderLinkItemTitle {
+      color: $text-link-color;
+    }
+  }
+}
+
+.topHeaderLinkItemTitle {
+  @include flex-center();
+  font-size: $text-xs;
+  font-weight: $font-medium;
+  color: $text-muted-color;
+}
