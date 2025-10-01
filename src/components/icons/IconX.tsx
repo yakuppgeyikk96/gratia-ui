@@ -1,6 +1,11 @@
+import { COLORS } from "@/constants/colors";
+import { SIZES } from "@/constants/sizes";
 import IconComponent from "@/types/IconComponent";
 
-export default function IconX({ color = "#4A5568", size = 16 }: IconComponent) {
+export default function IconX({
+  color = COLORS.ICON_DEFAULT,
+  size = SIZES.ICON_DEFAULT,
+}: IconComponent) {
   return (
     <svg
       width={size}

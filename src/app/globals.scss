@@ -1,6 +1,11 @@
-@use "@/styles/_colors.scss" as *;
-@use "@/styles/_variables.scss" as *;
+@use "@/styles/core/_colors.scss" as *;
+@use "@/styles/core/_variables.scss" as *;
 
+:root {
+  --background: #{$bg-color};
+  --background-secondary: #{$bg-secondary-color};
+  --text-primary: #{$text-primary-color};
+}
 
 html,
 body {
@@ -9,8 +14,8 @@ body {
 }
 
 body {
-  color: $text-primary-color;
-  background: $bg-secondary-color;
+  color: var(--text-primary);
+  background: var(--background-secondary);
   font-family: $font-family-sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

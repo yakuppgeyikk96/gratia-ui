@@ -1,12 +1,13 @@
-@use "@/styles/_colors.scss" as *;
-@use "@/styles/_spacing.scss" as *;
-@use "@/styles/_border.scss" as *;
-@use "@/styles/_flex.scss" as *;
-@use "@/styles/_variables.scss" as *;
+@use "@/styles/core/_colors.scss" as *;
+@use "@/styles/core/_spacing.scss" as *;
+@use "@/styles/core/_border.scss" as *;
+@use "@/styles/layout/_flex.scss" as *;
+@use "@/styles/core/_variables.scss" as *;
 
 .trigger {
   @include flex($align: center, $gap: $spacing-2);
   border: none;
+  height: fit-content;
 
   background-color: transparent;
   color: $text-primary-color;
@@ -84,3 +85,11 @@
   }
 }
 
+.icon {
+  height: fit-content;
+}
+
+.iconText {
+  font-size: inherit;
+  line-height: 1;
+}

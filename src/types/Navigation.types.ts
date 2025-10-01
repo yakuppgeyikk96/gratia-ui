@@ -1,7 +1,7 @@
 
 
 
-interface NavigationLink {
+export interface NavigationLink {
   title: string;
   href: string;
 }

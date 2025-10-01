@@ -1,0 +1,14 @@
+@use "@/styles/layout/_flex.scss" as *;
+@use "@/styles/core/_spacing.scss" as *;
+
+
+.registerPageWrapper {
+  @include flex-center;
+
+  height: calc(100vh - $spacing-52);
+  width: 100vw;
+}
+
+.registerPageFormContainer {
+  height: 100%;
+}

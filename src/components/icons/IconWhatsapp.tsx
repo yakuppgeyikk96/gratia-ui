@@ -1,8 +1,10 @@
+import { COLORS } from "@/constants/colors";
+import { SIZES } from "@/constants/sizes";
 import IconComponent from "@/types/IconComponent";
 
 export default function IconWhatsapp({
-  color = "#4A5568",
-  size = 16,
+  color = COLORS.ICON_DEFAULT,
+  size = SIZES.ICON_DEFAULT,
 }: IconComponent) {
   return (
     <svg

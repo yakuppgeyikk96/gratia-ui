@@ -1,16 +1,18 @@
-import TopHeader from "@/components/TopHeader";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Concert_One, Inter } from "next/font/google";
+
+import Header from "@/components/layout/Header";
 import "./globals.scss";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const concertOne = Concert_One({
+  weight: ["400"],
   subsets: ["latin"],
+  variable: "--font-concert-one",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <TopHeader />
+      <body className={`${inter.variable} ${concertOne.variable}`}>
+        <Header />
         {children}
       </body>
     </html>

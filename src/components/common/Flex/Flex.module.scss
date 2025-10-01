@@ -1,4 +1,4 @@
-@use "@/styles/flex" as *;
+@use "@/styles/layout/_flex.scss" as *;
 
 .flex {
   @include flex-row;
@@ -11,24 +11,32 @@
     @include flex-column;
   }
 
-  &.direction-row-reverse {
-    @include flex-row-reverse;
+  &.align-start {
+    @include align-start;
   }
 
-  &.direction-column-reverse {
-    @include flex-column-reverse;
+  &.align-center {
+    @include align-center;
+  }
+
+  &.align-end {
+    @include align-end;
+  }
+
+  &.align-stretch {
+    @include align-stretch;
   }
 
   &.justify-start {
     @include justify-start;
   }
 
-  &.justify-end {
-    @include justify-end;
-  }
-
   &.justify-center {
     @include justify-center;
+  }
+
+  &.justify-end {
+    @include justify-end;
   }
 
   &.justify-between {
@@ -37,85 +45,5 @@
 
   &.justify-around {
     @include justify-around;
-  }
-
-  &.justify-evenly {
-    @include justify-evenly;
-  }
-
-  &.align-start {
-    @include align-start;
-  }
-
-  &.align-end {
-    @include align-end;
-  }
-
-  &.align-center {
-    @include align-center;
-  }
-
-  &.align-baseline {
-    @include align-baseline;
-  }
-
-  &.align-stretch {
-    @include align-stretch;
-  }
-
-  &.wrap-wrap {
-    @include flex-wrap;
-  }
-
-  &.wrap-nowrap {
-    @include flex-nowrap;
-  }
-
-  &.wrap-wrap-reverse {
-    @include flex-wrap-reverse;
-  }
-
-  &.grow {
-    @include flex-grow;
-  }
-
-  &.grow-0 {
-    @include flex-grow(0);
-  }
-
-  &.grow-1 {
-    @include flex-grow(1);
-  }
-
-  &.grow-2 {
-    @include flex-grow(2);
-  }
-
-  &.shrink {
-    @include flex-shrink;
-  }
-
-  &.shrink-0 {
-    @include flex-shrink(0);
-  }
-
-  &.shrink-1 {
-    @include flex-shrink(1);
-  }
-
-  &.flex-none {
-    @include flex-none;
-  }
-
-  &.flex-1 {
-    @include flex-1;
-  }
-
-  &.flex-auto {
-    @include flex-auto;
-  }
-
-  &.flex-initial {
-    @include flex-initial;
   }
 }
